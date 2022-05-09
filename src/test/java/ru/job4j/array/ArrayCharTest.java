@@ -21,4 +21,12 @@ public class ArrayCharTest {
         boolean result = ArrayChar.startsWith(word, pref);
         Assert.assertFalse(result);
     }
+
+    @Test
+    public void whenStartWith1PrefixThenTrue() {
+        char[] word = {'W', 'o', 'r', 'l', 'd'};
+        char[] pref = {'W', 'o'};
+        boolean result = ArrayChar.startsWith(word, pref);
+        Assert.assertTrue(result);
+    }
 }
