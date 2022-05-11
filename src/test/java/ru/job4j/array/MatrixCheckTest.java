@@ -45,7 +45,7 @@ public class MatrixCheckTest {
     @Test
     public void whenHasMonoVertical1() {
         char[][] input = {
-                {' ', 'Y', ' '},
+                {' ', 'X', ' '},
                 {' ', ' ', ' '},
                 {' ', ' ', ' '},
         };
