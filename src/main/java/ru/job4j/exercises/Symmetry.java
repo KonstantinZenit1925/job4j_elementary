@@ -9,9 +9,8 @@ package ru.job4j.exercises;
  */
 public class Symmetry {
     public static boolean check(int num) {
-        String str1 = Integer.toString(num); // преобразуем число в строку
-        for (int i = 0; i < str1.length() / 2; i++) {   // с помощью цикла проходим по строке до середины
-                                                        // если первый символ не равен последнему
+        String str1 = Integer.toString(num);
+        for (int i = 0; i < str1.length() / 2; i++) {
             if (str1.charAt(i) != str1.charAt(str1.length() - i - 1)) {
                 return false;
             }
